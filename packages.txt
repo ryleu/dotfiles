@@ -1,0 +1,10 @@
+fish
+thefuck
+exa
+kitty
+micro
+neofetch
+gnome-shell-extension-pop-shell
+gnome-shell-extension-user-theme
+gnome-shell-extension-appindicator
+aria2

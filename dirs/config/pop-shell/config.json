@@ -1,0 +1,27 @@
+{
+  "float": [
+    {
+      "class": "pop-shell-example",
+      "title": "pop-shell-example"
+    },
+    {
+      "class": "discord",
+      "title": "Discord Updater"
+    },
+    {
+      "class": "Windscribe2"
+    },
+    {
+      "class": "Steam",
+      "title": "Steam Dialog"
+    },
+    {
+      "class": "Steam",
+      "title": "Apex Legends - Steam"
+    }
+  ],
+  "skiptaskbarhidden": [],
+  "log_on_focus": false,
+  "move_pointer_on_switch": false,
+  "default_pointer_position": "TOP_LEFT"
+}

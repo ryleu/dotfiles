@@ -1,0 +1,3 @@
+[submodule "dirs/icons/.papirus"]
+	path = dirs/icons/.papirus
+	url = https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
