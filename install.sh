@@ -29,6 +29,7 @@ do
 
 	if [[ -e "$dotfiles_dir/$dotfile/pre-install.sh" ]]; then
 		echo "Running pre-setup script"
+		echo
 		cd "$dotfile"
 		bash "pre-install.sh"
 		cd ".."
@@ -55,6 +56,7 @@ do
 
 	if [[ -e "$dotfiles_dir/$dotfile/post-install.sh" ]]; then
 		echo "Running post-setup script"
+		echo
 		cd "$dotfile"
 		bash "post-install.sh"
 		cd ".."
