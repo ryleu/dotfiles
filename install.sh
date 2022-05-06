@@ -43,15 +43,13 @@ do
 	for d in $dirs
 	do
 		if [[ -L "/home/$USER/.$dotfile/$d" ]]; then
-			echo "Removing existing link for $d"
-			rm "/home/$USER/.$dotfile/$d"
+			echo "Link already exists for $d"
 		elif [[ -e "/home/$USER/.$dotfile/$d" ]]; then
 			echo "Backing up $d"
 			mv -f "/home/$USER/.$dotfile/$d" "/home/$USER/.$dotfile/$d.bak"
+			echo "Linking $d"
+			ln -s "$dotfiles_dir/$dotfile/$d/" "/home/$USER/.$dotfile/"
 		fi
-		
-		echo "Linking $d"
-		ln -s "$dotfiles_dir/$dotfile/$d/" "/home/$USER/.$dotfile/"
 		echo
 	done
 
