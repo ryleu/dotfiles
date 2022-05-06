@@ -3,15 +3,15 @@
 style_reset="\e[0m"
 style_info="\e[1m"
 
-echo -e "$style_info### INSTALLING: packages ###$style_reset"
+echo -e "$style_info### INSTALLING: dnf packages ###$style_reset"
 sudo dnf install $(cat packages.txt)
 echo
 
-echo -e "$style_info### INSTALLING: submodules ###$style_reset"
+echo -e "$style_info### UPDATING: git submodules ###$style_reset"
 git submodule update --force
 echo
 
-echo -e "$style_info### INSTALLING: dotfiles ###$style_reset"
+echo -e "$style_info### UPDATING: dotfiles ###$style_reset"
 cd "dirs"
 
 # figure out where we are
@@ -66,3 +66,9 @@ do
 	echo "$dotfile setup complete!"
 	echo
 done
+
+cd ..
+
+echo -e "$style_info### UPDATING: dconf  ###$style_reset"
+dconf load -f / < dconf.conf
+echo
