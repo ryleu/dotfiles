@@ -24,3 +24,7 @@ cd ..
 echo -e "$style_info### UPDATING: dconf ###$style_reset"
 dconf load -f / < dconf.conf
 echo
+
+echo -e "$style_info### INSTALLATION COMPLETE! ###$style_reset"
+echo "You may want to consider restarting and/or logging out and back in. Some changes may not apply properly, otherwise."
+echo

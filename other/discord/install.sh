@@ -4,6 +4,8 @@ for v in discord discordcanary
 do
 	echo "Applying config for $v"
 
+	killall -qI $v
+
 	mkdir -p ~/.config/$v
 
 	if [[ -e ~/.config/$v/settings.json ]]; then
