@@ -2,9 +2,9 @@
 
 for v in discord discordcanary
 do
-	echo "Applying config for $v"
+	echo "Applying config for $v. The process will be killed if it is running"
 
-	killall -qI $v
+	killall -I $v
 
 	mkdir -p ~/.config/$v
 
