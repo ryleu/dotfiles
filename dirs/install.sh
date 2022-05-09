@@ -46,7 +46,6 @@ do
 		cd "$dotfile"
 		bash "post-install.sh"
 		cd ".."
-		echo
 	fi
 	
 	echo "$dotfile setup complete!"
