@@ -4,6 +4,7 @@ if status is-interactive
     alias ccat "pygmentize -g"
     alias whatismyip "curl -s checkip.amazonaws.com"
     alias yt-music "yt-dlp -x --audio-format mp3"
+    set -x EDITOR "/usr/bin/micro"
 end
 
 function fish_prompt --description 'Write out the prompt'
