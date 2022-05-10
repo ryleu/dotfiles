@@ -1,6 +1,10 @@
 [com/github/stunkymonkey/nautilus-open-any-terminal]
 terminal='kitty'
 
+[org/gnome/desktop/default-applications/terminal]
+exec='kitty'
+exec-arg='--'
+
 [org/gnome/desktop/interface]
 cursor-theme='phinger-cursors'
 document-font-name='Cantarell 11'

@@ -22,7 +22,7 @@ bash install.sh
 cd ..
 
 echo -e "$style_info### UPDATING: dconf ###$style_reset"
-dconf load -f / < dconf.conf
+dconf load -f / < dconf.toml
 echo
 
 echo -e "$style_info### INSTALLATION COMPLETE! ###$style_reset"
