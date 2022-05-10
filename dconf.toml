@@ -6,10 +6,11 @@ exec='kitty'
 exec-arg='--'
 
 [org/gnome/desktop/interface]
+color-scheme='prefer-dark'
 cursor-theme='phinger-cursors'
 document-font-name='Cantarell 11'
 font-name='Cantarell 11'
-gtk-theme='Orchis-dark-ryleu'
+gtk-theme='Orchis-ryleu-Dark'
 icon-theme='Papirus-Dark'
 monospace-font-name='FiraCode Nerd Font Mono 10'
 
@@ -57,7 +58,7 @@ smart-gaps=true
 tile-by-default=true
 
 [org/gnome/shell/extensions/user-theme]
-name='Orchis-dark-ryleu'
+name='Orchis-ryleu-Dark'
 
 [org/gnome/shell/keybindings]
 switch-to-application-1=['<Super>1']

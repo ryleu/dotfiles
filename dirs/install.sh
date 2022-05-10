@@ -31,9 +31,11 @@ do
 	do
 		if [[ -L "/home/$USER/.$dotfile/$d" ]]; then
 			echo "Link already exists for $d"
-		elif [[ -e "/home/$USER/.$dotfile/$d" ]]; then
-			echo "Backing up $d"
-			mv -f "/home/$USER/.$dotfile/$d" "/home/$USER/.$dotfile/$d.bak"
+		else
+			if [[ -e "/home/$USER/.$dotfile/$d" ]]; then
+				echo "Backing up $d"
+				mv -f "/home/$USER/.$dotfile/$d" "/home/$USER/.$dotfile/$d.bak"
+			fi
 			echo "Linking $d"
 			ln -s "$dotfiles_dir/$dotfile/$d/" "/home/$USER/.$dotfile/"
 		fi

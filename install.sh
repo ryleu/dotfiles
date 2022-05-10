@@ -8,7 +8,7 @@ sudo dnf install $(cat packages.txt)
 echo
 
 echo -e "$style_info### UPDATING: git submodules ###$style_reset"
-git submodule update --force
+git submodule update --init
 echo
 
 echo -e "$style_info### UPDATING: dotfiles ###$style_reset"
