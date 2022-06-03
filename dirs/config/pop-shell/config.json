@@ -18,6 +18,17 @@
     {
       "class": "Steam",
       "title": "Apex Legends - Steam"
+    },
+    {
+      "class": "firefox",
+      "title": "Picture-in-Picture"
+    },
+    {
+      "class": "firefox",
+      "title": "Firefox — Sharing Indicator"
+    },
+    {
+      "class": "rescuetime.exe"
     }
   ],
   "skiptaskbarhidden": [],
