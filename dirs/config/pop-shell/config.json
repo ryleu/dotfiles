@@ -20,6 +20,7 @@
       "title": "Apex Legends - Steam"
     },
     {
+<<<<<<< Updated upstream
       "class": "firefox",
       "title": "Picture-in-Picture"
     },
@@ -29,6 +30,14 @@
     },
     {
       "class": "rescuetime.exe"
+=======
+      "class": "Steam",
+      "title": "DOOM Eternal - Steam"
+    },
+    {
+      "class": "Steam",
+      "title": "Risk of Rain 2 - Steam"
+>>>>>>> Stashed changes
     }
   ],
   "skiptaskbarhidden": [],
