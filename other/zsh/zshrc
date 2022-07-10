@@ -20,4 +20,22 @@ EDITOR="/usr/bin/micro"
 
 STARSHIP_CONFIG="/home/$USER/.config/starship/config.toml"
 
+# automatically enable python venvs, thank you, CatDevz
+function cd() {
+  builtin cd "$@"
+
+  if [[ -z "$VIRTUAL_ENV" ]] ; then
+    if [[ -d ./venv ]] ; then
+      source ./venv/bin/activate
+    fi
+  else
+    parentdir="$(dirname "$VIRTUAL_ENV")"
+    if [[ "$PWD"/ != "$parentdir"/* ]] ; then
+      deactivate
+    fi
+  fi
+}
+
+eval $(thefuck --alias)
+
 eval "$(starship init zsh)"
