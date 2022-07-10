@@ -18,7 +18,7 @@ alias ccat="pygmentize -g"
 alias whatismyip="curl -s checkip.amazonaws.com"
 EDITOR="/usr/bin/micro"
 
-STARSHIP_CONFIG="/home/$USER/.config/starship/config.toml"
+STARSHIP_CONFIG="$HOME/.config/starship/config.toml"
 
 # automatically enable python venvs, thank you, CatDevz
 function cd() {
@@ -38,4 +38,4 @@ function cd() {
 
 eval $(thefuck --alias)
 
-eval "$(starship init zsh)"
+eval $(starship init zsh)
