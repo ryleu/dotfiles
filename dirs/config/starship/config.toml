@@ -1,0 +1,17 @@
+[character]
+success_symbol = "[|>](bold green)"
+error_symbol = "[|>](bold red)"
+
+[hostname]
+ssh_only = false
+
+[username]
+show_always = true
+style_user = "bold cyan"
+format = "[$user]($style)@"
+
+[directory]
+style = "bold bright-blue"
+
+[cmd_duration]
+disabled = true

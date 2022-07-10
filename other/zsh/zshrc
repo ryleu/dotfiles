@@ -1,0 +1,23 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt beep nomatch
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/ryleu/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+alias ls="exa --icons"
+alias la="exa -alF --icons"
+alias ccat="pygmentize -g"
+alias whatismyip="curl -s checkip.amazonaws.com"
+EDITOR="/usr/bin/micro"
+
+STARSHIP_CONFIG="/home/$USER/.config/starship/config.toml"
+
+eval "$(starship init zsh)"
