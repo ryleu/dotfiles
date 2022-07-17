@@ -16,11 +16,26 @@ alias ls="exa --icons"
 alias la="exa -alF --icons"
 alias ccat="pygmentize -g"
 alias whatismyip="curl -s checkip.amazonaws.com"
+alias packwiz="go run github.com/packwiz/packwiz@latest"
 EDITOR="/usr/bin/micro"
 
 STARSHIP_CONFIG="$HOME/.config/starship/config.toml"
 
-# automatically enable python venvs, thank you, CatDevz
+# fix zsh weirdness with home / end / other similar keys. i need to make a tool for this
+bindkey "\e[1;5D" 		backward-word
+bindkey "\e[1;5C" 		forward-word
+
+# alt-bs and ctrl-del
+bindkey "\e[3;5~"		kill-word
+bindkey "\033Z"			backward-kill-word
+
+# del, home and end
+bindkey "\e[3~"			delete-char
+bindkey "\033[H"		beginning-of-line
+bindkey "\033[F"		end-of-line
+
+
+# automatically enable python venvs. thank you, CatDevz!
 function cd() {
   builtin cd "$@"
 
