@@ -1,43 +1,8 @@
 {
   "float": [
     {
-      "class": "pop-shell-example",
-      "title": "pop-shell-example"
-    },
-    {
-      "class": "discord",
-      "title": "Discord Updater"
-    },
-    {
-      "class": "Windscribe2"
-    },
-    {
-      "class": "Steam",
-      "title": "Steam Dialog"
-    },
-    {
-      "class": "Steam",
-      "title": "Apex Legends - Steam"
-    },
-    {
-<<<<<<< Updated upstream
       "class": "firefox",
       "title": "Picture-in-Picture"
-    },
-    {
-      "class": "firefox",
-      "title": "Firefox — Sharing Indicator"
-    },
-    {
-      "class": "rescuetime.exe"
-=======
-      "class": "Steam",
-      "title": "DOOM Eternal - Steam"
-    },
-    {
-      "class": "Steam",
-      "title": "Risk of Rain 2 - Steam"
->>>>>>> Stashed changes
     }
   ],
   "skiptaskbarhidden": [],
