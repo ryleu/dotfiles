@@ -3,6 +3,10 @@
     {
       "class": "firefox",
       "title": "Picture-in-Picture"
+    },
+    {
+      "class": "firefox",
+      "title": "Firefox — Sharing Indicator"
     }
   ],
   "skiptaskbarhidden": [],
