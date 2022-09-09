@@ -1,17 +1,24 @@
+add_newline = false
+
 [character]
 success_symbol = "[|>](bold green)"
 error_symbol = "[|>](bold red)"
 
 [hostname]
-ssh_only = false
+ssh_only = true
+format = "@[$ssh_symbol$hostname]($style) "
 
 [username]
-show_always = true
+show_always = false
 style_user = "bold cyan"
-format = "[$user]($style)@"
+format = "[$user]($style)"
 
 [directory]
 style = "bold bright-blue"
+format = "[$path]($style)[$read_only]($read_only_style) "
 
 [cmd_duration]
+disabled = true
+
+[line_break]
 disabled = true
