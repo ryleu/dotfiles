@@ -15,7 +15,3 @@ else
 	echo "Linking .zshrc"
 	ln -s "$dotfiles_dir/zshrc" "$HOME/.zshrc"
 fi
-echo
-
-echo "zsh setup complete!"
-echo

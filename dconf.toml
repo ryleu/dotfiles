@@ -10,7 +10,7 @@ color-scheme='prefer-dark'
 cursor-theme='phinger-cursors'
 document-font-name='Cantarell 11'
 font-name='Cantarell 11'
-gtk-theme='Orchis-ryleu-Dark'
+gtk-theme='Adw-gtk3-dark'
 icon-theme='Papirus-Dark'
 monospace-font-name='FiraCode Nerd Font Mono 10'
 
@@ -78,7 +78,7 @@ first-run=false
 enabled=true
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-custom-command='fish'
+custom-command='zsh'
 use-custom-command=true
 
 [org/gnome/tweaks]
