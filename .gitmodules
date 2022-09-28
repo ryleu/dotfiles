@@ -4,6 +4,3 @@
 [submodule "other/discord/powercord"]
 	path = other/discord/powercord
 	url = https://github.com/powercord-org/powercord
-[submodule "dirs/themes/.orchis"]
-	path = dirs/themes/.orchis
-	url = https://github.com/ryleu/Orchis-theme
