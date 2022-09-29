@@ -10,7 +10,7 @@ color-scheme='prefer-dark'
 cursor-theme='phinger-cursors'
 document-font-name='Cantarell 11'
 font-name='Cantarell 11'
-gtk-theme='Adw-gtk3-dark'
+gtk-theme='adw-gtk3-dark'
 icon-theme='Papirus-Dark'
 monospace-font-name='FiraCode Nerd Font Mono 10'
 
@@ -56,9 +56,6 @@ gap-outer=uint32 1
 show-title=false
 smart-gaps=true
 tile-by-default=true
-
-[org/gnome/shell/extensions/user-theme]
-name='Orchis-ryleu-Dark'
 
 [org/gnome/shell/keybindings]
 switch-to-application-1=['<Super>1']
