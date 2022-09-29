@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # figure out where we are
-dotfiles_dir=`dirname $(realpath $0)`
+dotfiles_dir=$(dirname $(realpath $0))
 
 # get the dirs with install files to run
-dotfiles=`ls -d */ | grep -oE "[^/]+/\$" | tr -d "/"`
+dotfiles=$(ls -d */ | grep -oE "[^/]+/\$" | tr -d "/")
 
 for dotfile in $dotfiles
 do

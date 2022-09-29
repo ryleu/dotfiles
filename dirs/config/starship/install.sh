@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # figure out where we are
-dotfiles_dir=`dirname $(realpath $0)`
+dotfiles_dir=$(dirname $(realpath $0))
 
 echo -e "Setting up backup link"
 

@@ -1,13 +1,13 @@
 #!/bin/bash
 
-firacode_version=$(curl -s "https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest" | jq -r ".id")
+firacode_version=$(curl -s https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest | jq -r ".id")
 
 # check if we already have the latest version
 
 # does the version file exist?
-if [[ -e ".cache/FiraCode.zip.version" ]]; then
+if [[ -e .cache/FiraCode.zip.version ]]; then
 	# is the version the same as the latest version?
-	if [[ $(grep -oE "[0-9]+" ".cache/FiraCode.zip.version") = $firacode_version ]]; then
+	if [[ $(grep -oE "[0-9]+" .cache/FiraCode.zip.version) = $firacode_version ]]; then
 		echo "FiraCode is already up-to-date"
 		exit 0
 	fi
