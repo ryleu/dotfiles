@@ -28,3 +28,6 @@ echo
 echo -e "$style_info### INSTALLATION COMPLETE! ###$style_reset"
 echo "You may want to consider restarting and/or logging out and back in. Some changes may not apply properly, otherwise."
 echo
+
+cat notes.txt
+echo

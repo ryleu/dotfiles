@@ -33,7 +33,7 @@ button-layout='appmenu:minimize,maximize,close'
 titlebar-font='Cantarell Bold 11'
 
 [org/gnome/mutter]
-edge-tiling=false
+edge-tiling=true
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/open-terminal/']

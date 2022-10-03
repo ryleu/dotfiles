@@ -9,3 +9,5 @@ gnome-shell-extension-user-theme
 gnome-shell-extension-appindicator
 aria2
 starship
+gnome-tweaks
+gnome-extensions-app

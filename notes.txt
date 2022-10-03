@@ -1,0 +1,1 @@
+Make sure to also install Blur My Shell <https://extensions.gnome.org/extension/3193/blur-my-shell/>
