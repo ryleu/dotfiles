@@ -6,7 +6,9 @@ setopt beep nomatch
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/ryleu/.zshrc'
+if [[ -e "$HOME/.zshrc" ]]; then
+	zstyle :compinstall filename "$HOME/.zshrc"
+fi
 
 autoload -Uz compinit
 compinit
