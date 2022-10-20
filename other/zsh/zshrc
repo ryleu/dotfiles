@@ -79,7 +79,7 @@ export PATH
 
 alias ls="exa --icons"
 alias la="exa -alF --icons"
-alias ccat="pygmentize -g"
+alias ccat="bat -pp"
 alias whatismyip="curl -s checkip.amazonaws.com"
 alias packwiz="go run github.com/packwiz/packwiz@latest"
 

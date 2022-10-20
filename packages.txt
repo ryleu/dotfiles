@@ -11,3 +11,4 @@ aria2
 starship
 gnome-tweaks
 gnome-extensions-app
+bat
