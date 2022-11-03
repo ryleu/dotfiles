@@ -82,6 +82,7 @@ alias la="exa -alF --icons"
 alias ccat="bat -pp"
 alias whatismyip="curl -s checkip.amazonaws.com"
 alias packwiz="go run github.com/packwiz/packwiz@latest"
+alias neofetch="sl"
 
 eval $(thefuck --alias)
 
