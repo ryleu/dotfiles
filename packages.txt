@@ -1,4 +1,6 @@
 zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
 thefuck
 exa
 kitty

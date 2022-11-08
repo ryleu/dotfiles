@@ -84,6 +84,9 @@ alias whatismyip="curl -s checkip.amazonaws.com"
 alias packwiz="go run github.com/packwiz/packwiz@latest"
 alias neofetch="sl"
 
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 eval $(thefuck --alias)
 
 eval $(starship init zsh)
