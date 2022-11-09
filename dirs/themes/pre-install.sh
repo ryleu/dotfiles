@@ -7,9 +7,9 @@ adw_download_url=$(echo $adw_json | jq -r ".assets|.[0]|.browser_download_url")
 # check if we already have the latest version
 
 # does the version file exist?
-if [[ -e .cache/adw.tar.xz.version ]]; then
+if [[ -e .cache/adw3.tar.xz.version ]]; then
 	# is the version the same as the latest version?
-	if [[ $(grep -oE "[0-9]+" .cache/adw.tar.xz.version) = $adw_version ]]; then
+	if [[ $(grep -oE "[0-9]+" .cache/adw3.tar.xz.version) = $adw_version ]]; then
 		echo "adw-gtk3 is already up-to-date"
 		exit 0
 	fi

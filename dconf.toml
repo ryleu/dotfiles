@@ -36,12 +36,17 @@ titlebar-font='Cantarell Bold 11'
 edge-tiling=true
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/open-terminal/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/open-terminal/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-monitor/']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/open-terminal]
 binding='<Primary><Alt>t'
 command='kitty'
 name='Terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-monitor]
+binding='<Shift><Primary>Escape'
+command='gnome-system-monitor'
+name='System Monitor'
 
 [org/gnome/shell]
 command-history=['kitty']
