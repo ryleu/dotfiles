@@ -66,14 +66,6 @@ alias ccat="bat -pp"
 alias whatismyip="curl -s checkip.amazonaws.com"
 alias packwiz="go run github.com/packwiz/packwiz@latest"
 
-function neofetch() {
-	if [[ $(date +'%m') = 11 ]]; then
-		sl
-	else
-		builtin neofetch "$@"
-	fi
-}
-
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
