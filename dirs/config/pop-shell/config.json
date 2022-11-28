@@ -7,10 +7,12 @@
     {
       "class": "firefox",
       "title": "Firefox — Sharing Indicator"
+    },
+    {
+      "class": "Steam",
+      "title": "Risk of Rain 2 - Steam"
     }
   ],
   "skiptaskbarhidden": [],
-  "log_on_focus": false,
-  "move_pointer_on_switch": false,
-  "default_pointer_position": "TOP_LEFT"
+  "log_on_focus": false
 }
