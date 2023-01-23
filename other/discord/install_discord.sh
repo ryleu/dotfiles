@@ -2,13 +2,14 @@
 
 pkill Discord --signal SIGKILL
 
-rm -rf 'discord.tar.gz' 'Discord/' "~/.local/share/discord/" "~/.local/share/applications/discord.desktop"
-wget 'https://discord.com/api/download?platform=linux&format=tar.gz' -O 'discord.tar.gz'
+rm -rfv 'discord.tar.gz' 'Discord/' "~/.local/share/discord/" "~/.local/share/applications/discord.desktop"
+
+wget -vO 'discord.tar.gz' 'https://discord.com/api/download?platform=linux&format=tar.gz'
 
 tar -xaf 'discord.tar.gz'
 
-mv 'Discord/resources/app.asar' 'Discord/resources/app.asar.bak'
-wget -O 'Discord/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
+mv -v 'Discord/resources/app.asar' 'Discord/resources/app.asar.bak'
+wget -vO 'Discord/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
 
 cat <<EOF > "$HOME/.local/share/applications/discord.desktop"
 [Desktop Entry]
@@ -23,4 +24,4 @@ Categories=Network;InstantMessaging;
 Path=$HOME/.local/bin
 EOF
 
-mv -f 'Discord/' "$HOME/.local/share/discord/"
+mv -fv 'Discord/' "$HOME/.local/share/discord/"
