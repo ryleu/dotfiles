@@ -1,0 +1,28 @@
+#!/bin/env sh
+
+pkill Discord --signal SIGKILL
+
+rm -rf 'discord-canary.tar.gz' 'DiscordCanary/' "~/.local/share/discord-canary/" "~/.local/share/applications/discord-canary.desktop"
+
+wget 'https://discord.com/api/download/canary?platform=linux&format=tar.gz' -O 'discord-canary.tar.gz'
+
+tar -xaf 'discord-canary.tar.gz'
+
+mv 'DiscordCanary/resources/app.asar' 'DiscordCanary/resources/app.asar.bak'
+wget -O 'DiscordCanary/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
+
+cat <<EOF > "$HOME/.local/share/applications/discord-canary.desktop"
+[Desktop Entry]
+Name=Discord Canary
+StartupWMClass=discord
+Comment=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
+GenericName=Internet Messenger
+Exec=$HOME/.local/share/discord-canary/DiscordCanary
+Icon=discord-canary
+Type=Application
+Categories=Network;InstantMessaging;
+Path=$HOME/.local/bin
+EOF
+#'
+
+mv -f 'DiscordCanary/' "$HOME/.local/share/discord-canary/"
