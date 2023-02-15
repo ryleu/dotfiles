@@ -24,4 +24,6 @@ Categories=Network;InstantMessaging;
 Path=$HOME/.local/bin
 EOF
 
+mkdir -p "$HOME/.local/share/discord"
+
 mv -fv 'DiscordCanary/' "$HOME/.local/share/discord-canary/"

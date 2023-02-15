@@ -2,7 +2,7 @@
 
 pkill Discord --signal SIGKILL
 
-rm -rfv 'discord.tar.gz' 'Discord/' "~/.local/share/discord/" "~/.local/share/applications/discord.desktop"
+rm -rfv 'discord.tar.gz' 'Discord/' "$HOME/.local/share/discord/" "$HOME/.local/share/applications/discord.desktop"
 
 wget -vO 'discord.tar.gz' 'https://discord.com/api/download?platform=linux&format=tar.gz'
 
@@ -23,5 +23,7 @@ Type=Application
 Categories=Network;InstantMessaging;
 Path=$HOME/.local/bin
 EOF
+
+mkdir -p "$HOME/.local/share/discord"
 
 mv -fv 'Discord/' "$HOME/.local/share/discord/"
