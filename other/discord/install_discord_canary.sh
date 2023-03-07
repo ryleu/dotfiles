@@ -1,16 +1,21 @@
 #!/bin/env sh
 
+# Prep for install
+echo -e "Preparing for installation\n"
 pkill Discord --signal SIGKILL
+rm -rfv 'discord-canary.tar.gz' 'DiscordCanary/'
 
-rm -rfv 'discord-canary.tar.gz' 'DiscordCanary/' "$HOME/.local/share/discord-canary/" "$HOME/.local/share/applications/discord-canary.desktop"
-
-wget -vO 'discord-canary.tar.gz' 'https://discord.com/api/download/canary?platform=linux&format=tar.gz'
-
+# Download and extract
+echo -e "\nDownloading and extracting files\n"
+wget -vO 'discord-canary.tar.gz' 'https://discord.com/api/download/canary?platform=linux&format=tar.gz' || exit 1
 tar -xaf 'discord-canary.tar.gz'
 
+# Download OpenASAR
+echo -e "\nDownloading OpenASAR\n"
 mv -v 'DiscordCanary/resources/app.asar' 'DiscordCanary/resources/app.asar.bak'
 wget -vO 'DiscordCanary/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
 
+# Modify desktop entry for local install
 cat <<EOF > "$HOME/.local/share/applications/discord-canary.desktop"
 [Desktop Entry]
 Name=Discord Canary
@@ -24,6 +29,8 @@ Categories=Network;InstantMessaging;
 Path=$HOME/.local/bin
 EOF
 
-mkdir -p "$HOME/.local/share/discord"
-
+echo -e "\nMoving files\n"
+rm -rfv "$HOME/.local/share/discord-canary/"
+mkdir -p "$HOME/.local/share/discord-canary/"
 mv -fv 'DiscordCanary/' "$HOME/.local/share/discord-canary/"
+echo -e "\nInstallation complete!"
