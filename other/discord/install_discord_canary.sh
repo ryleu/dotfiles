@@ -22,7 +22,7 @@ Name=Discord Canary
 StartupWMClass=discord
 Comment=All-in-one voice and text chat for gamers that is free, secure, and works on both your desktop and phone.
 GenericName=Internet Messenger
-Exec=$HOME/.local/share/discord-canary/DiscordCanary/DiscordCanary
+Exec=$HOME/.local/share/DiscordCanary/DiscordCanary
 Icon=discord-canary
 Type=Application
 Categories=Network;InstantMessaging;
@@ -30,7 +30,7 @@ Path=$HOME/.local/bin
 EOF
 
 echo -e "\nMoving files\n"
-rm -rfv "$HOME/.local/share/discord-canary/"
-mkdir -p "$HOME/.local/share/discord-canary/"
-mv -fv 'DiscordCanary/' "$HOME/.local/share/discord-canary/"
+rm -rfv "$HOME/.local/share/DiscordCanary"
+mkdir -p "$HOME/.local/share/"
+mv -fv 'DiscordCanary/' "$HOME/.local/share/"
 echo -e "\nInstallation complete!"
