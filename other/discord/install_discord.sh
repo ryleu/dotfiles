@@ -12,7 +12,7 @@ tar -xaf 'discord.tar.gz'
 
 # Download OpenASAR
 echo -e "\nDownloading OpenASAR\n"
-mv -v 'Discord/resources/app.asar' 'Discord/resources/app.asar.bak'
+mv -v 'Discord/resources/app.asar' 'Discord/resources/app.asar.original'
 wget -vO 'Discord/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
 
 # Modify desktop entry for local install

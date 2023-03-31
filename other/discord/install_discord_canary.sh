@@ -12,7 +12,7 @@ tar -xaf 'discord-canary.tar.gz'
 
 # Download OpenASAR
 echo -e "\nDownloading OpenASAR\n"
-mv -v 'DiscordCanary/resources/app.asar' 'DiscordCanary/resources/app.asar.bak'
+mv -v 'DiscordCanary/resources/app.asar' 'DiscordCanary/resources/app.asar.original'
 wget -vO 'DiscordCanary/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
 
 # Modify desktop entry for local install
