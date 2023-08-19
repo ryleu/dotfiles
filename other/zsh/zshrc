@@ -60,14 +60,20 @@ then
 fi
 export PATH
 
-alias ls="exa --icons"
-alias la="exa -alF --icons"
+if [[ -f /usr/bin/exa ]]; then
+	alias ls="exa --icons"
+	alias la="exa -alF --icons"
+fi
 alias ccat="bat -pp --tabs 4"
 alias whatismyip="curl -s checkip.amazonaws.com"
 alias packwiz="go run github.com/packwiz/packwiz@latest"
 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+if [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 eval $(thefuck --alias)
 

@@ -10,11 +10,6 @@ echo -e "\nDownloading and extracting files\n"
 wget -vO 'discord.tar.gz' 'https://discord.com/api/download?platform=linux&format=tar.gz' || exit 1
 tar -xaf 'discord.tar.gz'
 
-# Download OpenASAR
-echo -e "\nDownloading OpenASAR\n"
-mv -v 'Discord/resources/app.asar' 'Discord/resources/app.asar.original'
-wget -vO 'Discord/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
-
 # Modify desktop entry for local install
 cat <<EOF > "$HOME/.local/share/applications/discord.desktop"
 [Desktop Entry]
