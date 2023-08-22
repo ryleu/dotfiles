@@ -9,8 +9,8 @@ neofetch
 gnome-shell-extension-pop-shell
 gnome-shell-extension-user-theme
 gnome-shell-extension-appindicator
-aria2
 starship
+aria2
 gnome-tweaks
 gnome-extensions-app
 bat

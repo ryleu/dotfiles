@@ -7,6 +7,10 @@ echo -e "$style_info### INSTALLING: RPM fusion ###$style_reset"
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 echo 
 
+echo -e "$style_info### INSTALLING: Starship COPR ###$style_reset"
+sudo dnf copr enable atim/starship 
+echo
+
 echo -e "$style_info### INSTALLING: Flathub ###$style_reset"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 echo
