@@ -10,11 +10,6 @@ echo -e "\nDownloading and extracting files\n"
 wget -vO 'discord-canary.tar.gz' 'https://discord.com/api/download/canary?platform=linux&format=tar.gz' || exit 1
 tar -xaf 'discord-canary.tar.gz'
 
-# Download OpenASAR
-echo -e "\nDownloading OpenASAR\n"
-mv -v 'DiscordCanary/resources/app.asar' 'DiscordCanary/resources/app.asar.original'
-wget -vO 'DiscordCanary/resources/app.asar' 'https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar'
-
 # Modify desktop entry for local install
 cat <<EOF > "$HOME/.local/share/applications/discord-canary.desktop"
 [Desktop Entry]
@@ -26,7 +21,7 @@ Exec=$HOME/.local/share/DiscordCanary/DiscordCanary
 Icon=discord-canary
 Type=Application
 Categories=Network;InstantMessaging;
-Path=$HOME/.local/bin
+Path=$HOME/.local/share/DiscordCanary
 EOF
 
 echo -e "\nMoving files\n"

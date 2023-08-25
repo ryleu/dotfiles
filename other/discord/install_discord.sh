@@ -21,7 +21,7 @@ Exec=$HOME/.local/share/Discord/Discord
 Icon=discord
 Type=Application
 Categories=Network;InstantMessaging;
-Path=$HOME/.local/bin
+Path=$HOME/.local/share/Discord
 EOF
 
 echo -e "\nMoving files\n"
