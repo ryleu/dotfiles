@@ -84,7 +84,7 @@ if [[ -d ~/.spicetify/ ]]; then
 fi
 
 # bun completions
-[ -s "/home/ryleu/.bun/_bun" ] && source "/home/ryleu/.bun/_bun"
+[ -s "/home/$USER/.bun/_bun" ] && source "/home/$USER/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
