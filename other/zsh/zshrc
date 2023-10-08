@@ -82,3 +82,10 @@ eval $(starship init zsh)
 if [[ -d ~/.spicetify/ ]]; then
 	export PATH=$PATH:$(realpath ~/.spicetify)
 fi
+
+# bun completions
+[ -s "/home/ryleu/.bun/_bun" ] && source "/home/ryleu/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
