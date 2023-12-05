@@ -1,6 +1,0 @@
-[submodule "dirs/icons/.papirus"]
-	path = dirs/icons/.papirus
-	url = https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
-[submodule "other/discord/powercord"]
-	path = other/discord/powercord
-	url = https://github.com/powercord-org/powercord

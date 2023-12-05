@@ -27,4 +27,4 @@ echo $firacode_version > .cache/FiraCode.zip.version
 
 # extract the files we want from it
 echo "Extracting FiraCode Nerd Font"
-unzip -u .cache/FiraCode.zip -x "*Windows*" "Fura*" -d firacode-nf
+unzip -u .cache/FiraCode.zip -d firacode-nf

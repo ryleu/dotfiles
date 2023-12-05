@@ -54,19 +54,20 @@ if [ -f /etc/zshrc ]; then
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+if [[ -d ~/go/bin/ ]]; then
+	PATH="$PATH:$HOME/go/bin"
 fi
 export PATH
 
-if [[ -f /usr/bin/exa ]]; then
-	alias ls="exa --icons"
-	alias la="exa -alF --icons"
+if [[ -f /usr/bin/eza ]]; then
+	alias ls="eza --icons"
+	alias la="eza -alF --icons"
 fi
 alias ccat="bat -pp --tabs 4"
 alias whatismyip="curl -s checkip.amazonaws.com"
-alias packwiz="go run github.com/packwiz/packwiz@latest"
 
 if [[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
 	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -89,3 +90,5 @@ fi
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+[ -f "/home/ryleu/.ghcup/env" ] && source "/home/ryleu/.ghcup/env" # ghcup-env

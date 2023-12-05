@@ -1,8 +1,8 @@
 {
   "float": [
     {
-      "class": "firefox",
-      "title": "Picture-in-Picture"
+      "class": "com.obsproject.Studio",
+      "title": "Windowed Projector (Preview)"
     },
     {
       "class": "firefox",
@@ -11,10 +11,6 @@
     {
       "class": "Steam",
       "title": "Risk of Rain 2 - Steam"
-    },
-    {
-      "class": "com.obsproject.Studio",
-      "title": "Windowed Projector (Preview)"
     }
   ],
   "skiptaskbarhidden": [],

@@ -2,7 +2,7 @@ zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
 thefuck
-exa
+eza
 kitty
 micro
 neofetch
@@ -15,3 +15,5 @@ gnome-tweaks
 gnome-extensions-app
 bat
 git-delta
+papirus-icon-theme
+sl
