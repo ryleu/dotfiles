@@ -91,4 +91,4 @@ fi
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-[ -f "/home/ryleu/.ghcup/env" ] && source "/home/ryleu/.ghcup/env" # ghcup-env
+[ -f "/home/ryleu/.ghcup/env" ] && source "/home/ryleu/.ghcup/env" || true
