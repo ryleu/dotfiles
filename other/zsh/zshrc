@@ -78,11 +78,11 @@ fi
 
 eval $(thefuck --alias)
 
-if [[ $(starship init zsh) != $(cat .starship_zsh) ]]
+if [[ $(starship init zsh) != $(cat ~/.starship_zsh) ]]
 then
-	starship init zsh > .starship_zsh
+	starship init zsh > ~/.starship_zsh
 fi
-source .starship_zsh
+source ~/.starship_zsh
 
 if [[ -d ~/.spicetify/ ]]; then
 	export PATH=$PATH:$(realpath ~/.spicetify)
