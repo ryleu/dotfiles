@@ -48,6 +48,26 @@ binding='<Shift><Primary>Escape'
 command='gnome-system-monitor'
 name='System Monitor'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/macro-1]
+binding='<Shift><Super>1'
+command='/home/$HOME/.local/bin/macro 1'
+name='macro 1'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/macro-2]
+binding='<Shift><Super>2'
+command='/home/$HOME/.local/bin/macro 2'
+name='macro 2'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/macro-3]
+binding='<Shift><Super>3'
+command='/home/$HOME/.local/bin/macro 3'
+name='macro 3'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/macro-4]
+binding='<Shift><Super>4'
+command='/home/$HOME/.local/bin/macro 4'
+name='macro 4'
+
 [org/gnome/shell]
 command-history=['kitty']
 disable-user-extensions=false
