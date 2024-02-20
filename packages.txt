@@ -17,3 +17,4 @@ bat
 git-delta
 papirus-icon-theme
 sl
+zoxide
